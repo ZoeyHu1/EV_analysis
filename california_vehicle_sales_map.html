@@ -1,0 +1,1638 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c5efc86d03cadf1712d7da334dced690 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c5efc86d03cadf1712d7da334dced690" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c5efc86d03cadf1712d7da334dced690 = L.map(
+                "map_c5efc86d03cadf1712d7da334dced690",
+                {
+                    center: [37.5, -119.5],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_dc2a2b7d5425dd4ba8c41e7ff9a279ce = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_dc2a2b7d5425dd4ba8c41e7ff9a279ce.addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var marker_be6221a01286c6cc7aaaff4019e0691b = L.marker(
+                [38.447204760894294, -120.64823537472263],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_d5d1ac9f79c5087aed89dd172accc195 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_be6221a01286c6cc7aaaff4019e0691b.setIcon(icon_d5d1ac9f79c5087aed89dd172accc195);
+        
+    
+        var popup_7c55a596f7efd92547e9b01319e795b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_847a27e1948581d71ff596749c019226 = $(`<div id="html_847a27e1948581d71ff596749c019226" style="width: 100.0%; height: 100.0%;"><b>County:</b> Amador<br><b>Actual Vehicles Sold:</b> 101<br><b>Predicted Vehicles Sold:</b> 215.0</div>`)[0];
+                popup_7c55a596f7efd92547e9b01319e795b5.setContent(html_847a27e1948581d71ff596749c019226);
+            
+        
+
+        marker_be6221a01286c6cc7aaaff4019e0691b.bindPopup(popup_7c55a596f7efd92547e9b01319e795b5)
+        ;
+
+        
+    
+    
+            var marker_4187e1041a837ede2c9000dc2c112e82 = L.marker(
+                [39.59710833904799, -122.38779261045676],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_108c5af9149f9d6971d3309af2f5bd79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4187e1041a837ede2c9000dc2c112e82.setIcon(icon_108c5af9149f9d6971d3309af2f5bd79);
+        
+    
+        var popup_ac78ecae4ef63aa73a5149bf4e61a80d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf88981d48a7b66debb7901099277a0d = $(`<div id="html_cf88981d48a7b66debb7901099277a0d" style="width: 100.0%; height: 100.0%;"><b>County:</b> Glenn<br><b>Actual Vehicles Sold:</b> 26<br><b>Predicted Vehicles Sold:</b> 33.0</div>`)[0];
+                popup_ac78ecae4ef63aa73a5149bf4e61a80d.setContent(html_cf88981d48a7b66debb7901099277a0d);
+            
+        
+
+        marker_4187e1041a837ede2c9000dc2c112e82.bindPopup(popup_ac78ecae4ef63aa73a5149bf4e61a80d)
+        ;
+
+        
+    
+    
+            var marker_abf669e4cc2108e16a168b1572b5ea31 = L.marker(
+                [39.09871539243777, -122.75550411943445],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_8cf6bf16644e67cda807d148c8f9810a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abf669e4cc2108e16a168b1572b5ea31.setIcon(icon_8cf6bf16644e67cda807d148c8f9810a);
+        
+    
+        var popup_6c2818e3b4a47915a6af75cfa3f3366b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a4545c2a1dcfa1daf94162cba429d493 = $(`<div id="html_a4545c2a1dcfa1daf94162cba429d493" style="width: 100.0%; height: 100.0%;"><b>County:</b> Lake<br><b>Actual Vehicles Sold:</b> 92<br><b>Predicted Vehicles Sold:</b> 188.0</div>`)[0];
+                popup_6c2818e3b4a47915a6af75cfa3f3366b.setContent(html_a4545c2a1dcfa1daf94162cba429d493);
+            
+        
+
+        marker_abf669e4cc2108e16a168b1572b5ea31.bindPopup(popup_6c2818e3b4a47915a6af75cfa3f3366b)
+        ;
+
+        
+    
+    
+            var marker_59b6eaa02b2958ceefcf87d87e8c37fb = L.marker(
+                [37.57934613921729, -119.90973105431655],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_c05f9ffc99addced42ae7fb6b15942f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_59b6eaa02b2958ceefcf87d87e8c37fb.setIcon(icon_c05f9ffc99addced42ae7fb6b15942f4);
+        
+    
+        var popup_b8603428ed77b0a68e0440b0e36835d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6623ff3115c92cc10c4baad6c6bd7e46 = $(`<div id="html_6623ff3115c92cc10c4baad6c6bd7e46" style="width: 100.0%; height: 100.0%;"><b>County:</b> Mariposa<br><b>Actual Vehicles Sold:</b> 29<br><b>Predicted Vehicles Sold:</b> 73.0</div>`)[0];
+                popup_b8603428ed77b0a68e0440b0e36835d0.setContent(html_6623ff3115c92cc10c4baad6c6bd7e46);
+            
+        
+
+        marker_59b6eaa02b2958ceefcf87d87e8c37fb.bindPopup(popup_b8603428ed77b0a68e0440b0e36835d0)
+        ;
+
+        
+    
+    
+            var marker_c0bf9a8ef310cfbe3619683aca94df2b = L.marker(
+                [38.50782922054163, -122.32895321161563],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_a9e23fb3da8920e568da3c7994630e10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0bf9a8ef310cfbe3619683aca94df2b.setIcon(icon_a9e23fb3da8920e568da3c7994630e10);
+        
+    
+        var popup_68ff0781283377cc195fc5cc0d40a467 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1a5e57c7b218aac23c7213b6f0a2c55 = $(`<div id="html_d1a5e57c7b218aac23c7213b6f0a2c55" style="width: 100.0%; height: 100.0%;"><b>County:</b> Napa<br><b>Actual Vehicles Sold:</b> 1059<br><b>Predicted Vehicles Sold:</b> 2828.0</div>`)[0];
+                popup_68ff0781283377cc195fc5cc0d40a467.setContent(html_d1a5e57c7b218aac23c7213b6f0a2c55);
+            
+        
+
+        marker_c0bf9a8ef310cfbe3619683aca94df2b.bindPopup(popup_68ff0781283377cc195fc5cc0d40a467)
+        ;
+
+        
+    
+    
+            var marker_20babd61eb7ce227023f77fad0acc74e = L.marker(
+                [40.76207583672113, -122.04367372739645],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_d13150eeeb7f2228de6e61e98cca59b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20babd61eb7ce227023f77fad0acc74e.setIcon(icon_d13150eeeb7f2228de6e61e98cca59b5);
+        
+    
+        var popup_0ed384bc24101817c685cac7da2afebd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f608c81ffdf34e683b5a059459fff5d9 = $(`<div id="html_f608c81ffdf34e683b5a059459fff5d9" style="width: 100.0%; height: 100.0%;"><b>County:</b> Shasta<br><b>Actual Vehicles Sold:</b> 359<br><b>Predicted Vehicles Sold:</b> 790.0</div>`)[0];
+                popup_0ed384bc24101817c685cac7da2afebd.setContent(html_f608c81ffdf34e683b5a059459fff5d9);
+            
+        
+
+        marker_20babd61eb7ce227023f77fad0acc74e.bindPopup(popup_0ed384bc24101817c685cac7da2afebd)
+        ;
+
+        
+    
+    
+            var marker_06f99ff25857ec2a045c16e7946e4d02 = L.marker(
+                [37.558040684911305, -120.99749217745719],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_76357f54c2562ff18a0c09b173939eca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06f99ff25857ec2a045c16e7946e4d02.setIcon(icon_76357f54c2562ff18a0c09b173939eca);
+        
+    
+        var popup_584ceffe2bf609f2d99c0f6947112a85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08b2787d6b1383eaad51bf70c7df41db = $(`<div id="html_08b2787d6b1383eaad51bf70c7df41db" style="width: 100.0%; height: 100.0%;"><b>County:</b> Stanislaus<br><b>Actual Vehicles Sold:</b> 1567<br><b>Predicted Vehicles Sold:</b> 2636.0</div>`)[0];
+                popup_584ceffe2bf609f2d99c0f6947112a85.setContent(html_08b2787d6b1383eaad51bf70c7df41db);
+            
+        
+
+        marker_06f99ff25857ec2a045c16e7946e4d02.bindPopup(popup_584ceffe2bf609f2d99c0f6947112a85)
+        ;
+
+        
+    
+    
+            var marker_6b9389f0b8280759f98fb49e24cc58f3 = L.marker(
+                [39.266298569827015, -121.34736030907136],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_f49b40fc82fb99c9fb62c8d77c3f5e9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b9389f0b8280759f98fb49e24cc58f3.setIcon(icon_f49b40fc82fb99c9fb62c8d77c3f5e9a);
+        
+    
+        var popup_ab7932c0daa342d9805d60172af2b9ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc0c84fe605cc6aefa4bd4496269bfb0 = $(`<div id="html_fc0c84fe605cc6aefa4bd4496269bfb0" style="width: 100.0%; height: 100.0%;"><b>County:</b> Yuba<br><b>Actual Vehicles Sold:</b> 222<br><b>Predicted Vehicles Sold:</b> 223.0</div>`)[0];
+                popup_ab7932c0daa342d9805d60172af2b9ab.setContent(html_fc0c84fe605cc6aefa4bd4496269bfb0);
+            
+        
+
+        marker_6b9389f0b8280759f98fb49e24cc58f3.bindPopup(popup_ab7932c0daa342d9805d60172af2b9ab)
+        ;
+
+        
+    
+    
+            var marker_a05160a2d849f251a6daac960b5fcd0a = L.marker(
+                [38.59933265654164, -119.8210006663238],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_0048bb7fe1d862e57cbd30298be491df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a05160a2d849f251a6daac960b5fcd0a.setIcon(icon_0048bb7fe1d862e57cbd30298be491df);
+        
+    
+        var popup_10b77c1e187179452e79c6fbf2727acc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54f1cc4bae7c86da24eca7b0c75ffe07 = $(`<div id="html_54f1cc4bae7c86da24eca7b0c75ffe07" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alpine<br><b>Actual Vehicles Sold:</b> 6<br><b>Predicted Vehicles Sold:</b> 8.0</div>`)[0];
+                popup_10b77c1e187179452e79c6fbf2727acc.setContent(html_54f1cc4bae7c86da24eca7b0c75ffe07);
+            
+        
+
+        marker_a05160a2d849f251a6daac960b5fcd0a.bindPopup(popup_10b77c1e187179452e79c6fbf2727acc)
+        ;
+
+        
+    
+    
+            var marker_a1017afc989314c3431a72d1346bf206 = L.marker(
+                [39.66955204165926, -121.59797595809441],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_4ce4532e3ff3969a1f0581d2bedfdf6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1017afc989314c3431a72d1346bf206.setIcon(icon_4ce4532e3ff3969a1f0581d2bedfdf6d);
+        
+    
+        var popup_96437cb5d0c4d791461d8667b2082b6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d363be1fa30beee2f644eec1df2dea6 = $(`<div id="html_0d363be1fa30beee2f644eec1df2dea6" style="width: 100.0%; height: 100.0%;"><b>County:</b> Butte<br><b>Actual Vehicles Sold:</b> 384<br><b>Predicted Vehicles Sold:</b> 1132.0</div>`)[0];
+                popup_96437cb5d0c4d791461d8667b2082b6e.setContent(html_0d363be1fa30beee2f644eec1df2dea6);
+            
+        
+
+        marker_a1017afc989314c3431a72d1346bf206.bindPopup(popup_96437cb5d0c4d791461d8667b2082b6e)
+        ;
+
+        
+    
+    
+            var marker_dfdc3d3b13474629c840960682f7a73d = L.marker(
+                [39.44183879669202, -123.39150522722645],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_ba3642c475114ae9f97c481e0e3b8c69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dfdc3d3b13474629c840960682f7a73d.setIcon(icon_ba3642c475114ae9f97c481e0e3b8c69);
+        
+    
+        var popup_e75c079e4aa8899d7228b7395e265a98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddd1e32a487e009759baab89ef7768d2 = $(`<div id="html_ddd1e32a487e009759baab89ef7768d2" style="width: 100.0%; height: 100.0%;"><b>County:</b> Mendocino<br><b>Actual Vehicles Sold:</b> 201<br><b>Predicted Vehicles Sold:</b> 837.0</div>`)[0];
+                popup_e75c079e4aa8899d7228b7395e265a98.setContent(html_ddd1e32a487e009759baab89ef7768d2);
+            
+        
+
+        marker_dfdc3d3b13474629c840960682f7a73d.bindPopup(popup_e75c079e4aa8899d7228b7395e265a98)
+        ;
+
+        
+    
+    
+            var marker_44e8569c68a66356186bece0a51be28a = L.marker(
+                [41.58918983011259, -120.72377634094993],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_274ef1006c90a53d44c0f019c76f1db5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_44e8569c68a66356186bece0a51be28a.setIcon(icon_274ef1006c90a53d44c0f019c76f1db5);
+        
+    
+        var popup_926cd1461db6712f7dfe7ca4941fa311 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e0b1987c766d57fc5eddb4c4cd67b448 = $(`<div id="html_e0b1987c766d57fc5eddb4c4cd67b448" style="width: 100.0%; height: 100.0%;"><b>County:</b> Modoc<br><b>Actual Vehicles Sold:</b> 4<br><b>Predicted Vehicles Sold:</b> 3.0</div>`)[0];
+                popup_926cd1461db6712f7dfe7ca4941fa311.setContent(html_e0b1987c766d57fc5eddb4c4cd67b448);
+            
+        
+
+        marker_44e8569c68a66356186bece0a51be28a.bindPopup(popup_926cd1461db6712f7dfe7ca4941fa311)
+        ;
+
+        
+    
+    
+            var marker_6dbed6c4f3552111fc06266e418903e0 = L.marker(
+                [37.939184727562136, -118.88687874861348],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_e90c06da0452f729ee58fae7fcc4aaad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6dbed6c4f3552111fc06266e418903e0.setIcon(icon_e90c06da0452f729ee58fae7fcc4aaad);
+        
+    
+        var popup_538ae4496e16f123894a8adf51ea938d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c00a0fc9b2f43467accbe9c547e04ff4 = $(`<div id="html_c00a0fc9b2f43467accbe9c547e04ff4" style="width: 100.0%; height: 100.0%;"><b>County:</b> Mono<br><b>Actual Vehicles Sold:</b> 29<br><b>Predicted Vehicles Sold:</b> 76.0</div>`)[0];
+                popup_538ae4496e16f123894a8adf51ea938d.setContent(html_c00a0fc9b2f43467accbe9c547e04ff4);
+            
+        
+
+        marker_6dbed6c4f3552111fc06266e418903e0.bindPopup(popup_538ae4496e16f123894a8adf51ea938d)
+        ;
+
+        
+    
+    
+            var marker_b93ac1a625c761792c013e54d8655c5b = L.marker(
+                [39.30455863026484, -120.7625214732497],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_2e8483588a162a43a2857ae81139c489 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b93ac1a625c761792c013e54d8655c5b.setIcon(icon_2e8483588a162a43a2857ae81139c489);
+        
+    
+        var popup_6b2fffff4f90fc7b7b64700d4551b6b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e1ce8aadf3b1b4c31c8b91d77be73bb = $(`<div id="html_4e1ce8aadf3b1b4c31c8b91d77be73bb" style="width: 100.0%; height: 100.0%;"><b>County:</b> Nevada<br><b>Actual Vehicles Sold:</b> 376<br><b>Predicted Vehicles Sold:</b> 672.0</div>`)[0];
+                popup_6b2fffff4f90fc7b7b64700d4551b6b1.setContent(html_4e1ce8aadf3b1b4c31c8b91d77be73bb);
+            
+        
+
+        marker_b93ac1a625c761792c013e54d8655c5b.bindPopup(popup_6b2fffff4f90fc7b7b64700d4551b6b1)
+        ;
+
+        
+    
+    
+            var marker_4de9c3b4cd2d6b5b369cbf9eb4fa060a = L.marker(
+                [33.69845178785342, -117.7579616846953],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_ae8d39ed8032091b442abd19a3865e98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4de9c3b4cd2d6b5b369cbf9eb4fa060a.setIcon(icon_ae8d39ed8032091b442abd19a3865e98);
+        
+    
+        var popup_31f45b6f569eb6bf482301cac86cdb21 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_527de188df0a1534c420ceddc2591e65 = $(`<div id="html_527de188df0a1534c420ceddc2591e65" style="width: 100.0%; height: 100.0%;"><b>County:</b> Orange<br><b>Actual Vehicles Sold:</b> 42107<br><b>Predicted Vehicles Sold:</b> 43484.0</div>`)[0];
+                popup_31f45b6f569eb6bf482301cac86cdb21.setContent(html_527de188df0a1534c420ceddc2591e65);
+            
+        
+
+        marker_4de9c3b4cd2d6b5b369cbf9eb4fa060a.bindPopup(popup_31f45b6f569eb6bf482301cac86cdb21)
+        ;
+
+        
+    
+    
+            var marker_399b25b5cbe7013e6edd1e44a22e9e8f = L.marker(
+                [33.74350882690596, -115.99567147917348],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_3af717450fe1db47d1dfe7b7c01c8b55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_399b25b5cbe7013e6edd1e44a22e9e8f.setIcon(icon_3af717450fe1db47d1dfe7b7c01c8b55);
+        
+    
+        var popup_68ddcb540143076d3549437367501de1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_874344c1229988230d5336832d35298c = $(`<div id="html_874344c1229988230d5336832d35298c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Riverside<br><b>Actual Vehicles Sold:</b> 17236<br><b>Predicted Vehicles Sold:</b> 26188.0</div>`)[0];
+                popup_68ddcb540143076d3549437367501de1.setContent(html_874344c1229988230d5336832d35298c);
+            
+        
+
+        marker_399b25b5cbe7013e6edd1e44a22e9e8f.bindPopup(popup_68ddcb540143076d3549437367501de1)
+        ;
+
+        
+    
+    
+            var marker_c8292674cecee46c958591081fefc149 = L.marker(
+                [36.60784534785252, -121.07499233174399],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_2db6d7699a7e9d43e36d01a4a0191f04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8292674cecee46c958591081fefc149.setIcon(icon_2db6d7699a7e9d43e36d01a4a0191f04);
+        
+    
+        var popup_c743202b24708aa60ef2d5cd1318a980 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e7a008f98ef621c1827c9f1225adc87 = $(`<div id="html_1e7a008f98ef621c1827c9f1225adc87" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Benito<br><b>Actual Vehicles Sold:</b> 353<br><b>Predicted Vehicles Sold:</b> 591.0</div>`)[0];
+                popup_c743202b24708aa60ef2d5cd1318a980.setContent(html_1e7a008f98ef621c1827c9f1225adc87);
+            
+        
+
+        marker_c8292674cecee46c958591081fefc149.bindPopup(popup_c743202b24708aa60ef2d5cd1318a980)
+        ;
+
+        
+    
+    
+            var marker_b8a6a9e191ee8eac8ed726dcbbfbc9a5 = L.marker(
+                [33.03331776539266, -116.73248243397236],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_05a874b8dced4803a298d6a61a8d517b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8a6a9e191ee8eac8ed726dcbbfbc9a5.setIcon(icon_05a874b8dced4803a298d6a61a8d517b);
+        
+    
+        var popup_e14976556f349a02fe08e4011bc92e88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe3ff407718086ab54b93c77bc47c2eb = $(`<div id="html_fe3ff407718086ab54b93c77bc47c2eb" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Diego<br><b>Actual Vehicles Sold:</b> 29924<br><b>Predicted Vehicles Sold:</b> 35610.0</div>`)[0];
+                popup_e14976556f349a02fe08e4011bc92e88.setContent(html_fe3ff407718086ab54b93c77bc47c2eb);
+            
+        
+
+        marker_b8a6a9e191ee8eac8ed726dcbbfbc9a5.bindPopup(popup_e14976556f349a02fe08e4011bc92e88)
+        ;
+
+        
+    
+    
+            var marker_d1fa9d4a6f7e97f6d11fa85352584d44 = L.marker(
+                [37.75896959199793, -122.44880043361292],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_cb026b1d9cd38420dae315e193510f19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d1fa9d4a6f7e97f6d11fa85352584d44.setIcon(icon_cb026b1d9cd38420dae315e193510f19);
+        
+    
+        var popup_412b9022d6564161ff408f429ce2d66f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5db0f4c5e0ff86ce2a065a1f47715bd4 = $(`<div id="html_5db0f4c5e0ff86ce2a065a1f47715bd4" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Francisco<br><b>Actual Vehicles Sold:</b> 7065<br><b>Predicted Vehicles Sold:</b> 9190.0</div>`)[0];
+                popup_412b9022d6564161ff408f429ce2d66f.setContent(html_5db0f4c5e0ff86ce2a065a1f47715bd4);
+            
+        
+
+        marker_d1fa9d4a6f7e97f6d11fa85352584d44.bindPopup(popup_412b9022d6564161ff408f429ce2d66f)
+        ;
+
+        
+    
+    
+            var marker_15017c021e4950d55df7c139867281bb = L.marker(
+                [38.682867798112056, -121.89414353264404],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_d53265d31b1cf9aa5648a6e92118d3bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_15017c021e4950d55df7c139867281bb.setIcon(icon_d53265d31b1cf9aa5648a6e92118d3bd);
+        
+    
+        var popup_19bf9d1ef175d1c4bf747c63f0d69f68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52b6a977e9b269ae9652d1cc203796ff = $(`<div id="html_52b6a977e9b269ae9652d1cc203796ff" style="width: 100.0%; height: 100.0%;"><b>County:</b> Yolo<br><b>Actual Vehicles Sold:</b> 1342<br><b>Predicted Vehicles Sold:</b> 4022.0</div>`)[0];
+                popup_19bf9d1ef175d1c4bf747c63f0d69f68.setContent(html_52b6a977e9b269ae9652d1cc203796ff);
+            
+        
+
+        marker_15017c021e4950d55df7c139867281bb.bindPopup(popup_19bf9d1ef175d1c4bf747c63f0d69f68)
+        ;
+
+        
+    
+    
+            var marker_7882c7fe51bec1d5c95d6831b9846b9f = L.marker(
+                [37.42151287774602, -122.32384489543391],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_9126a97c86171d749ed67f6c4de657ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7882c7fe51bec1d5c95d6831b9846b9f.setIcon(icon_9126a97c86171d749ed67f6c4de657ac);
+        
+    
+        var popup_af479effca96b679fa26bff7cfb546d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de64b83d7f59f580943cdd09158f6c7b = $(`<div id="html_de64b83d7f59f580943cdd09158f6c7b" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Mateo<br><b>Actual Vehicles Sold:</b> 10157<br><b>Predicted Vehicles Sold:</b> 19522.0</div>`)[0];
+                popup_af479effca96b679fa26bff7cfb546d5.setContent(html_de64b83d7f59f580943cdd09158f6c7b);
+            
+        
+
+        marker_7882c7fe51bec1d5c95d6831b9846b9f.bindPopup(popup_af479effca96b679fa26bff7cfb546d5)
+        ;
+
+        
+    
+    
+            var marker_0b6f1e58acd29a89d853856dc0e2de79 = L.marker(
+                [34.673062869992265, -120.01710662389905],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_7b57501f2ee5f1d65557b25482469f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b6f1e58acd29a89d853856dc0e2de79.setIcon(icon_7b57501f2ee5f1d65557b25482469f3f);
+        
+    
+        var popup_b37753138b16861c0e3dc3aa70cd16fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_642725e07333dfe606b3b53aa182c6a8 = $(`<div id="html_642725e07333dfe606b3b53aa182c6a8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Santa Barbara<br><b>Actual Vehicles Sold:</b> 2336<br><b>Predicted Vehicles Sold:</b> 5746.0</div>`)[0];
+                popup_b37753138b16861c0e3dc3aa70cd16fc.setContent(html_642725e07333dfe606b3b53aa182c6a8);
+            
+        
+
+        marker_0b6f1e58acd29a89d853856dc0e2de79.bindPopup(popup_b37753138b16861c0e3dc3aa70cd16fc)
+        ;
+
+        
+    
+    
+            var marker_ddb387f4f911ec9b090e26f9a5c3c643 = L.marker(
+                [37.05487985043904, -121.99806902640542],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_f450e125148c041ca05069b97157522a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddb387f4f911ec9b090e26f9a5c3c643.setIcon(icon_f450e125148c041ca05069b97157522a);
+        
+    
+        var popup_c75355329034b9c75f8b4830a0ccee09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9511bde11ec700a5460b9afb72433601 = $(`<div id="html_9511bde11ec700a5460b9afb72433601" style="width: 100.0%; height: 100.0%;"><b>County:</b> Santa Cruz<br><b>Actual Vehicles Sold:</b> 1461<br><b>Predicted Vehicles Sold:</b> 2919.0</div>`)[0];
+                popup_c75355329034b9c75f8b4830a0ccee09.setContent(html_9511bde11ec700a5460b9afb72433601);
+            
+        
+
+        marker_ddb387f4f911ec9b090e26f9a5c3c643.bindPopup(popup_c75355329034b9c75f8b4830a0ccee09)
+        ;
+
+        
+    
+    
+            var marker_c8462b0c1ed4c4dc6d6830825240c693 = L.marker(
+                [38.267957529044196, -121.93118987701646],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_51ca33d8c2da7c59c91ce7b5f49b8537 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c8462b0c1ed4c4dc6d6830825240c693.setIcon(icon_51ca33d8c2da7c59c91ce7b5f49b8537);
+        
+    
+        var popup_908e9b12a95c82b50655c29a5c345171 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec5d295be90db56c868e100819e3641 = $(`<div id="html_3ec5d295be90db56c868e100819e3641" style="width: 100.0%; height: 100.0%;"><b>County:</b> Solano<br><b>Actual Vehicles Sold:</b> 2563<br><b>Predicted Vehicles Sold:</b> 3705.0</div>`)[0];
+                popup_908e9b12a95c82b50655c29a5c345171.setContent(html_3ec5d295be90db56c868e100819e3641);
+            
+        
+
+        marker_c8462b0c1ed4c4dc6d6830825240c693.bindPopup(popup_908e9b12a95c82b50655c29a5c345171)
+        ;
+
+        
+    
+    
+            var marker_bf631dd7d0484c6c9437112362f6e91e = L.marker(
+                [39.033473968660886, -121.69614686817575],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_ad91954569f5e52cbd5aad4c5c914308 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bf631dd7d0484c6c9437112362f6e91e.setIcon(icon_ad91954569f5e52cbd5aad4c5c914308);
+        
+    
+        var popup_8e96c3159b3571fcb219b7dcce713296 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d973cb2f9617192d5ab2a8dc95aa73de = $(`<div id="html_d973cb2f9617192d5ab2a8dc95aa73de" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sutter<br><b>Actual Vehicles Sold:</b> 245<br><b>Predicted Vehicles Sold:</b> 428.0</div>`)[0];
+                popup_8e96c3159b3571fcb219b7dcce713296.setContent(html_d973cb2f9617192d5ab2a8dc95aa73de);
+            
+        
+
+        marker_bf631dd7d0484c6c9437112362f6e91e.bindPopup(popup_8e96c3159b3571fcb219b7dcce713296)
+        ;
+
+        
+    
+    
+            var marker_dc36c304b6aca90befbd8357267fcfc1 = L.marker(
+                [40.12435104230053, -122.23481070031981],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_4d32a6ecddaff2dd6c1daf0f487e9d2d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dc36c304b6aca90befbd8357267fcfc1.setIcon(icon_4d32a6ecddaff2dd6c1daf0f487e9d2d);
+        
+    
+        var popup_cd06812aac2b395ff7cb7c5793d2cac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4397fe0852f6b7c61760853b8a6438f7 = $(`<div id="html_4397fe0852f6b7c61760853b8a6438f7" style="width: 100.0%; height: 100.0%;"><b>County:</b> Tehama<br><b>Actual Vehicles Sold:</b> 69<br><b>Predicted Vehicles Sold:</b> 183.0</div>`)[0];
+                popup_cd06812aac2b395ff7cb7c5793d2cac5.setContent(html_4397fe0852f6b7c61760853b8a6438f7);
+            
+        
+
+        marker_dc36c304b6aca90befbd8357267fcfc1.bindPopup(popup_cd06812aac2b395ff7cb7c5793d2cac5)
+        ;
+
+        
+    
+    
+            var marker_a281e13d399b92ae3d79552a6bbd7189 = L.marker(
+                [38.02605158360358, -119.95158356761901],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_357f41a99a0633c02eb6abd937ad2f78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a281e13d399b92ae3d79552a6bbd7189.setIcon(icon_357f41a99a0633c02eb6abd937ad2f78);
+        
+    
+        var popup_778a5214ebc10e46d5c3ec772d27845f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0dd85a9cd7f64ac067087017b585062 = $(`<div id="html_d0dd85a9cd7f64ac067087017b585062" style="width: 100.0%; height: 100.0%;"><b>County:</b> Tuolumne<br><b>Actual Vehicles Sold:</b> 121<br><b>Predicted Vehicles Sold:</b> 301.0</div>`)[0];
+                popup_778a5214ebc10e46d5c3ec772d27845f.setContent(html_d0dd85a9cd7f64ac067087017b585062);
+            
+        
+
+        marker_a281e13d399b92ae3d79552a6bbd7189.bindPopup(popup_778a5214ebc10e46d5c3ec772d27845f)
+        ;
+
+        
+    
+    
+            var marker_62441023b61c3ca567d42533c578cca9 = L.marker(
+                [38.204521923316904, -120.55190054672084],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_096f8e36d8e1288225a25386e15a4747 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_62441023b61c3ca567d42533c578cca9.setIcon(icon_096f8e36d8e1288225a25386e15a4747);
+        
+    
+        var popup_8f0f8eb746d6413cd41f83b01f3cc35f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7adfb475d641a642ee34695c0b1343e = $(`<div id="html_a7adfb475d641a642ee34695c0b1343e" style="width: 100.0%; height: 100.0%;"><b>County:</b> Calaveras<br><b>Actual Vehicles Sold:</b> 149<br><b>Predicted Vehicles Sold:</b> 229.0</div>`)[0];
+                popup_8f0f8eb746d6413cd41f83b01f3cc35f.setContent(html_a7adfb475d641a642ee34695c0b1343e);
+            
+        
+
+        marker_62441023b61c3ca567d42533c578cca9.bindPopup(popup_8f0f8eb746d6413cd41f83b01f3cc35f)
+        ;
+
+        
+    
+    
+            var marker_b6f8d7f2218c231255f5fa7160cbe90d = L.marker(
+                [37.91871569843278, -121.9303861109752],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_4a674f6705517baa76a506025aabc2d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b6f8d7f2218c231255f5fa7160cbe90d.setIcon(icon_4a674f6705517baa76a506025aabc2d9);
+        
+    
+        var popup_44262af7149e88abf3c128a2447b5ded = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_753fa851a4ed31c68f661091acce342a = $(`<div id="html_753fa851a4ed31c68f661091acce342a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Contra Costa<br><b>Actual Vehicles Sold:</b> 11367<br><b>Predicted Vehicles Sold:</b> 15485.0</div>`)[0];
+                popup_44262af7149e88abf3c128a2447b5ded.setContent(html_753fa851a4ed31c68f661091acce342a);
+            
+        
+
+        marker_b6f8d7f2218c231255f5fa7160cbe90d.bindPopup(popup_44262af7149e88abf3c128a2447b5ded)
+        ;
+
+        
+    
+    
+            var marker_51ef91129746684592d166ce7aa122a6 = L.marker(
+                [41.74386462352736, -123.89894194285594],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_635f10da77f25cb0e84c47a782b16c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_51ef91129746684592d166ce7aa122a6.setIcon(icon_635f10da77f25cb0e84c47a782b16c02);
+        
+    
+        var popup_84549ecd25fd741957b9405b0a0a8795 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3967658d234dc40de3520f139cb34e18 = $(`<div id="html_3967658d234dc40de3520f139cb34e18" style="width: 100.0%; height: 100.0%;"><b>County:</b> Del Norte<br><b>Actual Vehicles Sold:</b> 33<br><b>Predicted Vehicles Sold:</b> 83.0</div>`)[0];
+                popup_84549ecd25fd741957b9405b0a0a8795.setContent(html_3967658d234dc40de3520f139cb34e18);
+            
+        
+
+        marker_51ef91129746684592d166ce7aa122a6.bindPopup(popup_84549ecd25fd741957b9405b0a0a8795)
+        ;
+
+        
+    
+    
+            var marker_f54c91607a69f4f9ff063ae7776441e0 = L.marker(
+                [33.0402521554102, -115.3636983112666],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_1535c5939423e030b868c192e47d2165 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f54c91607a69f4f9ff063ae7776441e0.setIcon(icon_1535c5939423e030b868c192e47d2165);
+        
+    
+        var popup_9a6d74bc474c75289671f41af259d90b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7169566912c1edd8f491bbe3de1c4ba5 = $(`<div id="html_7169566912c1edd8f491bbe3de1c4ba5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Imperial<br><b>Actual Vehicles Sold:</b> 430<br><b>Predicted Vehicles Sold:</b> 371.0</div>`)[0];
+                popup_9a6d74bc474c75289671f41af259d90b.setContent(html_7169566912c1edd8f491bbe3de1c4ba5);
+            
+        
+
+        marker_f54c91607a69f4f9ff063ae7776441e0.bindPopup(popup_9a6d74bc474c75289671f41af259d90b)
+        ;
+
+        
+    
+    
+            var marker_089331df5f46c03d005562fcf7240265 = L.marker(
+                [35.34275346839919, -118.72981690372407],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_b1277edb38802f1667073f122593c736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_089331df5f46c03d005562fcf7240265.setIcon(icon_b1277edb38802f1667073f122593c736);
+        
+    
+        var popup_7ff57d67e4323f7fc67537b8dfe88df7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f976b70ef218591a52a5fb65b2628a8 = $(`<div id="html_0f976b70ef218591a52a5fb65b2628a8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kern<br><b>Actual Vehicles Sold:</b> 2341<br><b>Predicted Vehicles Sold:</b> 3768.0</div>`)[0];
+                popup_7ff57d67e4323f7fc67537b8dfe88df7.setContent(html_0f976b70ef218591a52a5fb65b2628a8);
+            
+        
+
+        marker_089331df5f46c03d005562fcf7240265.bindPopup(popup_7ff57d67e4323f7fc67537b8dfe88df7)
+        ;
+
+        
+    
+    
+            var marker_20e5406d211ab7c5143928ec4796d5c1 = L.marker(
+                [36.0735300885264, -119.8162431947763],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_8a26b8dc14fd07732be720b7db06b543 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_20e5406d211ab7c5143928ec4796d5c1.setIcon(icon_8a26b8dc14fd07732be720b7db06b543);
+        
+    
+        var popup_00ce1679cc65658dbcda7195a07a7267 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d92b6c807c4314417692da2f33fa5452 = $(`<div id="html_d92b6c807c4314417692da2f33fa5452" style="width: 100.0%; height: 100.0%;"><b>County:</b> Kings<br><b>Actual Vehicles Sold:</b> 251<br><b>Predicted Vehicles Sold:</b> 478.0</div>`)[0];
+                popup_00ce1679cc65658dbcda7195a07a7267.setContent(html_d92b6c807c4314417692da2f33fa5452);
+            
+        
+
+        marker_20e5406d211ab7c5143928ec4796d5c1.bindPopup(popup_00ce1679cc65658dbcda7195a07a7267)
+        ;
+
+        
+    
+    
+            var marker_6a1b0796bee083898b0e75ee0395a142 = L.marker(
+                [37.218265718376884, -119.75892288985331],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_4ca3ca8392251793f53cde2173c8b07e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6a1b0796bee083898b0e75ee0395a142.setIcon(icon_4ca3ca8392251793f53cde2173c8b07e);
+        
+    
+        var popup_a819cce620e38970eb9db4cc7c99e151 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4922d70704d9202a7f646aa55b1a298a = $(`<div id="html_4922d70704d9202a7f646aa55b1a298a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Madera<br><b>Actual Vehicles Sold:</b> 362<br><b>Predicted Vehicles Sold:</b> 731.0</div>`)[0];
+                popup_a819cce620e38970eb9db4cc7c99e151.setContent(html_4922d70704d9202a7f646aa55b1a298a);
+            
+        
+
+        marker_6a1b0796bee083898b0e75ee0395a142.bindPopup(popup_a819cce620e38970eb9db4cc7c99e151)
+        ;
+
+        
+    
+    
+            var marker_67365ed4c6c7fcb4ce2b9761f293ab70 = L.marker(
+                [39.17838734948549, -122.23765925625888],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_86e63726ebf9f0b346a52c55fdd085e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67365ed4c6c7fcb4ce2b9761f293ab70.setIcon(icon_86e63726ebf9f0b346a52c55fdd085e9);
+        
+    
+        var popup_d00be370e00213762d4f0db7eb8d09b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e81050bd6e60a4ca53c3a1b22027418 = $(`<div id="html_2e81050bd6e60a4ca53c3a1b22027418" style="width: 100.0%; height: 100.0%;"><b>County:</b> Colusa<br><b>Actual Vehicles Sold:</b> 25<br><b>Predicted Vehicles Sold:</b> 38.0</div>`)[0];
+                popup_d00be370e00213762d4f0db7eb8d09b4.setContent(html_2e81050bd6e60a4ca53c3a1b22027418);
+            
+        
+
+        marker_67365ed4c6c7fcb4ce2b9761f293ab70.bindPopup(popup_d00be370e00213762d4f0db7eb8d09b4)
+        ;
+
+        
+    
+    
+            var marker_b47320a6629eefc3ee0d5d055b538b66 = L.marker(
+                [36.51173692607912, -117.41297467288443],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_373b342761a995ddb5f2e1be103bf48c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b47320a6629eefc3ee0d5d055b538b66.setIcon(icon_373b342761a995ddb5f2e1be103bf48c);
+        
+    
+        var popup_d1bcac12f099e328e85718fe61868265 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3336b9293721f4403211c190a74b8fd5 = $(`<div id="html_3336b9293721f4403211c190a74b8fd5" style="width: 100.0%; height: 100.0%;"><b>County:</b> Inyo<br><b>Actual Vehicles Sold:</b> 40<br><b>Predicted Vehicles Sold:</b> 61.0</div>`)[0];
+                popup_d1bcac12f099e328e85718fe61868265.setContent(html_3336b9293721f4403211c190a74b8fd5);
+            
+        
+
+        marker_b47320a6629eefc3ee0d5d055b538b66.bindPopup(popup_d1bcac12f099e328e85718fe61868265)
+        ;
+
+        
+    
+    
+            var marker_6ce85efbf626a0180509ad811b476cec = L.marker(
+                [37.19022963231167, -120.71394523516615],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_28edbd43c969f89589ded9fc359415c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6ce85efbf626a0180509ad811b476cec.setIcon(icon_28edbd43c969f89589ded9fc359415c3);
+        
+    
+        var popup_3abd442ef6ababbeaf8f224864cc305e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3315ad720c362be43bfe97ad370ab57a = $(`<div id="html_3315ad720c362be43bfe97ad370ab57a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Merced<br><b>Actual Vehicles Sold:</b> 522<br><b>Predicted Vehicles Sold:</b> 750.0</div>`)[0];
+                popup_3abd442ef6ababbeaf8f224864cc305e.setContent(html_3315ad720c362be43bfe97ad370ab57a);
+            
+        
+
+        marker_6ce85efbf626a0180509ad811b476cec.bindPopup(popup_3abd442ef6ababbeaf8f224864cc305e)
+        ;
+
+        
+    
+    
+            var marker_1785e4fd27f03918ffad17edd706903f = L.marker(
+                [40.005992010288466, -120.83750670416019],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_8a7f2cc5ccd7fe14177f49e0ab3d4227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1785e4fd27f03918ffad17edd706903f.setIcon(icon_8a7f2cc5ccd7fe14177f49e0ab3d4227);
+        
+    
+        var popup_aba5c48e61e6beb5c6dd7896fd17b7b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c65289340060a82e4381f268846844a8 = $(`<div id="html_c65289340060a82e4381f268846844a8" style="width: 100.0%; height: 100.0%;"><b>County:</b> Plumas<br><b>Actual Vehicles Sold:</b> 26<br><b>Predicted Vehicles Sold:</b> 45.0</div>`)[0];
+                popup_aba5c48e61e6beb5c6dd7896fd17b7b5.setContent(html_c65289340060a82e4381f268846844a8);
+            
+        
+
+        marker_1785e4fd27f03918ffad17edd706903f.bindPopup(popup_aba5c48e61e6beb5c6dd7896fd17b7b5)
+        ;
+
+        
+    
+    
+            var marker_3b70c425782e00d1c5c6a95adc14b90c = L.marker(
+                [37.934017521604055, -121.27105883992255],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_b9bc5749d33ae3e5dd08265d6a981153 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3b70c425782e00d1c5c6a95adc14b90c.setIcon(icon_b9bc5749d33ae3e5dd08265d6a981153);
+        
+    
+        var popup_6f2d35da7d7fa34f1c659a2032dec081 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bde771055fa970b5fb9ae4e9f862048e = $(`<div id="html_bde771055fa970b5fb9ae4e9f862048e" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Joaquin<br><b>Actual Vehicles Sold:</b> 4238<br><b>Predicted Vehicles Sold:</b> 5239.0</div>`)[0];
+                popup_6f2d35da7d7fa34f1c659a2032dec081.setContent(html_bde771055fa970b5fb9ae4e9f862048e);
+            
+        
+
+        marker_3b70c425782e00d1c5c6a95adc14b90c.bindPopup(popup_6f2d35da7d7fa34f1c659a2032dec081)
+        ;
+
+        
+    
+    
+            var marker_f832d5ba28585fe23140498240bcc9be = L.marker(
+                [39.58034203826914, -120.51740319158664],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_6c1b5189ff8ef206878e27905a099039 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f832d5ba28585fe23140498240bcc9be.setIcon(icon_6c1b5189ff8ef206878e27905a099039);
+        
+    
+        var popup_95960634ade0dd58ac86d43d91d41a9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b3e63cac955da5de7e501a6830cd82cc = $(`<div id="html_b3e63cac955da5de7e501a6830cd82cc" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sierra<br><b>Actual Vehicles Sold:</b> 6<br><b>Predicted Vehicles Sold:</b> 8.0</div>`)[0];
+                popup_95960634ade0dd58ac86d43d91d41a9e.setContent(html_b3e63cac955da5de7e501a6830cd82cc);
+            
+        
+
+        marker_f832d5ba28585fe23140498240bcc9be.bindPopup(popup_95960634ade0dd58ac86d43d91d41a9e)
+        ;
+
+        
+    
+    
+            var marker_e32644dca2e8f947e2ca9e3136bb77a8 = L.marker(
+                [36.22065104032969, -118.8021636353119],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_56c91ba57ef3f88365ea60247a74e6ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e32644dca2e8f947e2ca9e3136bb77a8.setIcon(icon_56c91ba57ef3f88365ea60247a74e6ca);
+        
+    
+        var popup_15c33329d5082afc073cac97ab9cfd2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f8450f6a9c6743f5053c75c7b9f5524a = $(`<div id="html_f8450f6a9c6743f5053c75c7b9f5524a" style="width: 100.0%; height: 100.0%;"><b>County:</b> Tulare<br><b>Actual Vehicles Sold:</b> 816<br><b>Predicted Vehicles Sold:</b> 2821.0</div>`)[0];
+                popup_15c33329d5082afc073cac97ab9cfd2a.setContent(html_f8450f6a9c6743f5053c75c7b9f5524a);
+            
+        
+
+        marker_e32644dca2e8f947e2ca9e3136bb77a8.bindPopup(popup_15c33329d5082afc073cac97ab9cfd2a)
+        ;
+
+        
+    
+    
+            var marker_ccb0e188d2e30a2994255cdf84f7f21b = L.marker(
+                [38.0726238790043, -122.72234657803062],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_745eee277ea39b66912cf642d0b3fe83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ccb0e188d2e30a2994255cdf84f7f21b.setIcon(icon_745eee277ea39b66912cf642d0b3fe83);
+        
+    
+        var popup_b6084131c207f019dd6ebe5f1283aad5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f09846613247ee1a4a7463e65252fd = $(`<div id="html_c6f09846613247ee1a4a7463e65252fd" style="width: 100.0%; height: 100.0%;"><b>County:</b> Marin<br><b>Actual Vehicles Sold:</b> 3766<br><b>Predicted Vehicles Sold:</b> 7118.0</div>`)[0];
+                popup_b6084131c207f019dd6ebe5f1283aad5.setContent(html_c6f09846613247ee1a4a7463e65252fd);
+            
+        
+
+        marker_ccb0e188d2e30a2994255cdf84f7f21b.bindPopup(popup_b6084131c207f019dd6ebe5f1283aad5)
+        ;
+
+        
+    
+    
+            var marker_456696456665e1b5bae87e8fa6f33d13 = L.marker(
+                [36.21777146135095, -121.23760877422183],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_d910852591a6384b2d36ac9c26c043a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_456696456665e1b5bae87e8fa6f33d13.setIcon(icon_d910852591a6384b2d36ac9c26c043a6);
+        
+    
+        var popup_b81a9abbd2534a2fc684034bbade4d95 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e21d665141acff31f136e6e12a005c16 = $(`<div id="html_e21d665141acff31f136e6e12a005c16" style="width: 100.0%; height: 100.0%;"><b>County:</b> Monterey<br><b>Actual Vehicles Sold:</b> 1613<br><b>Predicted Vehicles Sold:</b> 2997.0</div>`)[0];
+                popup_b81a9abbd2534a2fc684034bbade4d95.setContent(html_e21d665141acff31f136e6e12a005c16);
+            
+        
+
+        marker_456696456665e1b5bae87e8fa6f33d13.bindPopup(popup_b81a9abbd2534a2fc684034bbade4d95)
+        ;
+
+        
+    
+    
+            var marker_a1e7df4b1b11bcbd8f60e265eedc43f0 = L.marker(
+                [39.06259285869983, -120.72392329272508],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_3c31f2289a7970755d5755612a1fa7ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1e7df4b1b11bcbd8f60e265eedc43f0.setIcon(icon_3c31f2289a7970755d5755612a1fa7ab);
+        
+    
+        var popup_a357975757bc2b24e84f4f32465389c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2aa7cded10227754d1675673ddc2958 = $(`<div id="html_a2aa7cded10227754d1675673ddc2958" style="width: 100.0%; height: 100.0%;"><b>County:</b> Placer<br><b>Actual Vehicles Sold:</b> 4048<br><b>Predicted Vehicles Sold:</b> 5721.0</div>`)[0];
+                popup_a357975757bc2b24e84f4f32465389c9.setContent(html_a2aa7cded10227754d1675673ddc2958);
+            
+        
+
+        marker_a1e7df4b1b11bcbd8f60e265eedc43f0.bindPopup(popup_a357975757bc2b24e84f4f32465389c9)
+        ;
+
+        
+    
+    
+            var marker_4bd0176b5c70c4b2cc8aa24702e89602 = L.marker(
+                [36.757355419186275, -119.65128392021077],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_dc925cec526e10719b045a6d30039c22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4bd0176b5c70c4b2cc8aa24702e89602.setIcon(icon_dc925cec526e10719b045a6d30039c22);
+        
+    
+        var popup_98c4dc07cfd51d2b80f6894d30dfcd9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_027063eace9a3d36c34a6e4130a06dfe = $(`<div id="html_027063eace9a3d36c34a6e4130a06dfe" style="width: 100.0%; height: 100.0%;"><b>County:</b> Fresno<br><b>Actual Vehicles Sold:</b> 2827<br><b>Predicted Vehicles Sold:</b> 8770.0</div>`)[0];
+                popup_98c4dc07cfd51d2b80f6894d30dfcd9d.setContent(html_027063eace9a3d36c34a6e4130a06dfe);
+            
+        
+
+        marker_4bd0176b5c70c4b2cc8aa24702e89602.bindPopup(popup_98c4dc07cfd51d2b80f6894d30dfcd9d)
+        ;
+
+        
+    
+    
+            var marker_5917c9006bd4051c1a088a6a184bc2b9 = L.marker(
+                [40.69876225892244, -123.87622992141438],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_dbad30a89986739e89bbe1da3ed4a7cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5917c9006bd4051c1a088a6a184bc2b9.setIcon(icon_dbad30a89986739e89bbe1da3ed4a7cd);
+        
+    
+        var popup_877022c78d67680f676b2d8ad89cb63b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f61a6e7f0f5b5140d9090c824604627 = $(`<div id="html_8f61a6e7f0f5b5140d9090c824604627" style="width: 100.0%; height: 100.0%;"><b>County:</b> Humboldt<br><b>Actual Vehicles Sold:</b> 278<br><b>Predicted Vehicles Sold:</b> 767.0</div>`)[0];
+                popup_877022c78d67680f676b2d8ad89cb63b.setContent(html_8f61a6e7f0f5b5140d9090c824604627);
+            
+        
+
+        marker_5917c9006bd4051c1a088a6a184bc2b9.bindPopup(popup_877022c78d67680f676b2d8ad89cb63b)
+        ;
+
+        
+    
+    
+            var marker_e95410e21ec46f157a29bc369eb2e1bf = L.marker(
+                [40.67394684960929, -120.59398272514655],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_532687f06b45624b0c8b92483b0468af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e95410e21ec46f157a29bc369eb2e1bf.setIcon(icon_532687f06b45624b0c8b92483b0468af);
+        
+    
+        var popup_8fc97cee6dfaa1cd881467ae531ad7dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2085ceb24afaa6666ca79c27f096c4e = $(`<div id="html_e2085ceb24afaa6666ca79c27f096c4e" style="width: 100.0%; height: 100.0%;"><b>County:</b> Lassen<br><b>Actual Vehicles Sold:</b> 10<br><b>Predicted Vehicles Sold:</b> 11.0</div>`)[0];
+                popup_8fc97cee6dfaa1cd881467ae531ad7dc.setContent(html_e2085ceb24afaa6666ca79c27f096c4e);
+            
+        
+
+        marker_e95410e21ec46f157a29bc369eb2e1bf.bindPopup(popup_8fc97cee6dfaa1cd881467ae531ad7dc)
+        ;
+
+        
+    
+    
+            var marker_ef082a61673eda8fd4a6688833d86313 = L.marker(
+                [34.32044159528705, -118.22437523213881],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_277ce74e4e1421f7bbd7e8cbbe24efd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef082a61673eda8fd4a6688833d86313.setIcon(icon_277ce74e4e1421f7bbd7e8cbbe24efd6);
+        
+    
+        var popup_1331f80bafc711697f8c4095f6688dbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c17ae622bb72abefe392724202c7843f = $(`<div id="html_c17ae622bb72abefe392724202c7843f" style="width: 100.0%; height: 100.0%;"><b>County:</b> Los Angeles<br><b>Actual Vehicles Sold:</b> 99268<br><b>Predicted Vehicles Sold:</b> 87690.0</div>`)[0];
+                popup_1331f80bafc711697f8c4095f6688dbf.setContent(html_c17ae622bb72abefe392724202c7843f);
+            
+        
+
+        marker_ef082a61673eda8fd4a6688833d86313.bindPopup(popup_1331f80bafc711697f8c4095f6688dbf)
+        ;
+
+        
+    
+    
+            var marker_e9470996bfee44a477bb77fba3194cb3 = L.marker(
+                [38.45204405613055, -121.34184200406033],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_505bed457ea74950fa85c90ff8703439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e9470996bfee44a477bb77fba3194cb3.setIcon(icon_505bed457ea74950fa85c90ff8703439);
+        
+    
+        var popup_acdd7e8eaff68bd1377eeabd582cfc00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcf4dbc5d34dda796e92f73044332553 = $(`<div id="html_bcf4dbc5d34dda796e92f73044332553" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sacramento<br><b>Actual Vehicles Sold:</b> 10075<br><b>Predicted Vehicles Sold:</b> 13562.0</div>`)[0];
+                popup_acdd7e8eaff68bd1377eeabd582cfc00.setContent(html_bcf4dbc5d34dda796e92f73044332553);
+            
+        
+
+        marker_e9470996bfee44a477bb77fba3194cb3.bindPopup(popup_acdd7e8eaff68bd1377eeabd582cfc00)
+        ;
+
+        
+    
+    
+            var marker_4d7407f050932cc68bab4e0f8c5f10f2 = L.marker(
+                [34.8408645786843, -116.17769300029305],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_d0e84b3e9342cca175b7dd68c96b8e67 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d7407f050932cc68bab4e0f8c5f10f2.setIcon(icon_d0e84b3e9342cca175b7dd68c96b8e67);
+        
+    
+        var popup_d9a2ffbea72282c6ec6cf1be131a4854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d62634e2d91a12d3a5ead93dece3470 = $(`<div id="html_3d62634e2d91a12d3a5ead93dece3470" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Bernardino<br><b>Actual Vehicles Sold:</b> 13020<br><b>Predicted Vehicles Sold:</b> 22377.0</div>`)[0];
+                popup_d9a2ffbea72282c6ec6cf1be131a4854.setContent(html_3d62634e2d91a12d3a5ead93dece3470);
+            
+        
+
+        marker_4d7407f050932cc68bab4e0f8c5f10f2.bindPopup(popup_d9a2ffbea72282c6ec6cf1be131a4854)
+        ;
+
+        
+    
+    
+            var marker_28cc10cdbec13654eb5269fc2155ddc3 = L.marker(
+                [34.456976722318515, -119.08297040899878],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_0c446e2daa352ee770fa6addc5e71f14 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28cc10cdbec13654eb5269fc2155ddc3.setIcon(icon_0c446e2daa352ee770fa6addc5e71f14);
+        
+    
+        var popup_a191de7458f69e592fe25667347997a8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2a356701174981de5832d797e868536 = $(`<div id="html_d2a356701174981de5832d797e868536" style="width: 100.0%; height: 100.0%;"><b>County:</b> Ventura<br><b>Actual Vehicles Sold:</b> 7738<br><b>Predicted Vehicles Sold:</b> 12950.0</div>`)[0];
+                popup_a191de7458f69e592fe25667347997a8.setContent(html_d2a356701174981de5832d797e868536);
+            
+        
+
+        marker_28cc10cdbec13654eb5269fc2155ddc3.bindPopup(popup_a191de7458f69e592fe25667347997a8)
+        ;
+
+        
+    
+    
+            var marker_d917d9c494cfe7495e3bd1552575e15b = L.marker(
+                [37.64335452169001, -121.88489694916821],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_ac329b7b022ea642b52f7d2dfb6cb8b8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d917d9c494cfe7495e3bd1552575e15b.setIcon(icon_ac329b7b022ea642b52f7d2dfb6cb8b8);
+        
+    
+        var popup_80464f7ec85857b0b0754f1052259935 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8929677c0f6d88a4c757ec95b7eb7153 = $(`<div id="html_8929677c0f6d88a4c757ec95b7eb7153" style="width: 100.0%; height: 100.0%;"><b>County:</b> Alameda<br><b>Actual Vehicles Sold:</b> 17303<br><b>Predicted Vehicles Sold:</b> 33036.0</div>`)[0];
+                popup_80464f7ec85857b0b0754f1052259935.setContent(html_8929677c0f6d88a4c757ec95b7eb7153);
+            
+        
+
+        marker_d917d9c494cfe7495e3bd1552575e15b.bindPopup(popup_80464f7ec85857b0b0754f1052259935)
+        ;
+
+        
+    
+    
+            var marker_a2134526af7f34def8f672bdce4f2673 = L.marker(
+                [35.3871657560846, -120.4044726426928],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_6357dda0e7dd0558a6a3b4396671fb8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2134526af7f34def8f672bdce4f2673.setIcon(icon_6357dda0e7dd0558a6a3b4396671fb8b);
+        
+    
+        var popup_5346d2e7111d66cedb9a83ca0a807149 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3af335e6db7e0d453f6a544760b1da5 = $(`<div id="html_a3af335e6db7e0d453f6a544760b1da5" style="width: 100.0%; height: 100.0%;"><b>County:</b> San Luis Obispo<br><b>Actual Vehicles Sold:</b> 1484<br><b>Predicted Vehicles Sold:</b> 3682.0</div>`)[0];
+                popup_5346d2e7111d66cedb9a83ca0a807149.setContent(html_a3af335e6db7e0d453f6a544760b1da5);
+            
+        
+
+        marker_a2134526af7f34def8f672bdce4f2673.bindPopup(popup_5346d2e7111d66cedb9a83ca0a807149)
+        ;
+
+        
+    
+    
+            var marker_af8e317cc0d31c6b995fb3f186acaf96 = L.marker(
+                [41.592107859980516, -122.54083008331713],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_44be697e4cb7c55aa530c36927852739 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af8e317cc0d31c6b995fb3f186acaf96.setIcon(icon_44be697e4cb7c55aa530c36927852739);
+        
+    
+        var popup_05e0106208cb5031031ba525eae67582 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1c204bb7df3adf1425d1f93ebd2b1cd = $(`<div id="html_e1c204bb7df3adf1425d1f93ebd2b1cd" style="width: 100.0%; height: 100.0%;"><b>County:</b> Siskiyou<br><b>Actual Vehicles Sold:</b> 54<br><b>Predicted Vehicles Sold:</b> 110.0</div>`)[0];
+                popup_05e0106208cb5031031ba525eae67582.setContent(html_e1c204bb7df3adf1425d1f93ebd2b1cd);
+            
+        
+
+        marker_af8e317cc0d31c6b995fb3f186acaf96.bindPopup(popup_05e0106208cb5031031ba525eae67582)
+        ;
+
+        
+    
+    
+            var marker_9eead1c8ec2c36caa6e242f75bb5ea54 = L.marker(
+                [38.529902853507046, -122.89170272092859],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_7110517c7318470d2bc1dc454fb6788e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9eead1c8ec2c36caa6e242f75bb5ea54.setIcon(icon_7110517c7318470d2bc1dc454fb6788e);
+        
+    
+        var popup_9398e323772f7696f758a57d565c3970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a9f52796faba695b6736f62bca2c075 = $(`<div id="html_4a9f52796faba695b6736f62bca2c075" style="width: 100.0%; height: 100.0%;"><b>County:</b> Sonoma<br><b>Actual Vehicles Sold:</b> 3026<br><b>Predicted Vehicles Sold:</b> 7689.0</div>`)[0];
+                popup_9398e323772f7696f758a57d565c3970.setContent(html_4a9f52796faba695b6736f62bca2c075);
+            
+        
+
+        marker_9eead1c8ec2c36caa6e242f75bb5ea54.bindPopup(popup_9398e323772f7696f758a57d565c3970)
+        ;
+
+        
+    
+    
+            var marker_1185fac076901230022cd93eece94bf5 = L.marker(
+                [40.64994177228371, -123.11600971088467],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_2d91bb363e0b7b0dfbcfb604f0b1d93c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1185fac076901230022cd93eece94bf5.setIcon(icon_2d91bb363e0b7b0dfbcfb604f0b1d93c);
+        
+    
+        var popup_934f4b39124321255cc06b2af978a291 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82b1f280ffbaae6b3d09d8cf19b6f75c = $(`<div id="html_82b1f280ffbaae6b3d09d8cf19b6f75c" style="width: 100.0%; height: 100.0%;"><b>County:</b> Trinity<br><b>Actual Vehicles Sold:</b> 15<br><b>Predicted Vehicles Sold:</b> 29.0</div>`)[0];
+                popup_934f4b39124321255cc06b2af978a291.setContent(html_82b1f280ffbaae6b3d09d8cf19b6f75c);
+            
+        
+
+        marker_1185fac076901230022cd93eece94bf5.bindPopup(popup_934f4b39124321255cc06b2af978a291)
+        ;
+
+        
+    
+    
+            var marker_10f0f162c2ba0e0bc48e3b8ab8cdd0d6 = L.marker(
+                [38.77987948431774, -120.52807925470825],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_c3e981e475935cbc0bc611938b327c5d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10f0f162c2ba0e0bc48e3b8ab8cdd0d6.setIcon(icon_c3e981e475935cbc0bc611938b327c5d);
+        
+    
+        var popup_51c58b62ba1767eb1e6bd494e5d2b048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f7430320bb55b6f94fa62b84d0d6420 = $(`<div id="html_9f7430320bb55b6f94fa62b84d0d6420" style="width: 100.0%; height: 100.0%;"><b>County:</b> El Dorado<br><b>Actual Vehicles Sold:</b> 1208<br><b>Predicted Vehicles Sold:</b> 1276.0</div>`)[0];
+                popup_51c58b62ba1767eb1e6bd494e5d2b048.setContent(html_9f7430320bb55b6f94fa62b84d0d6420);
+            
+        
+
+        marker_10f0f162c2ba0e0bc48e3b8ab8cdd0d6.bindPopup(popup_51c58b62ba1767eb1e6bd494e5d2b048)
+        ;
+
+        
+    
+    
+            var marker_a9fb88603f9cc7d5fd711ae1d2ac9040 = L.marker(
+                [37.23308435171519, -121.69134054736949],
+                {}
+            ).addTo(map_c5efc86d03cadf1712d7da334dced690);
+        
+    
+            var icon_96d9fa435dc5f2822249e8304ffd806d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9fb88603f9cc7d5fd711ae1d2ac9040.setIcon(icon_96d9fa435dc5f2822249e8304ffd806d);
+        
+    
+        var popup_86cdbe68898db01166e44e6dbc7932ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a566e41e93f04d449b0e7e0c109f0298 = $(`<div id="html_a566e41e93f04d449b0e7e0c109f0298" style="width: 100.0%; height: 100.0%;"><b>County:</b> Santa Clara<br><b>Actual Vehicles Sold:</b> 29530<br><b>Predicted Vehicles Sold:</b> 43576.0</div>`)[0];
+                popup_86cdbe68898db01166e44e6dbc7932ab.setContent(html_a566e41e93f04d449b0e7e0c109f0298);
+            
+        
+
+        marker_a9fb88603f9cc7d5fd711ae1d2ac9040.bindPopup(popup_86cdbe68898db01166e44e6dbc7932ab)
+        ;
+
+        
+    
+</script>
+</html>
